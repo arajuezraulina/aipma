@@ -686,7 +686,7 @@ function AIPMAWebsite() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <GlobalIcon className="h-5 w-5 text-primary mt-0.5" />
+                  <Globe className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <p className="font-medium">Sitio Web</p>
                     <p className="text-muted-foreground">www.aipma.org</p>
