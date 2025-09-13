@@ -11,8 +11,8 @@ from datetime import datetime, timedelta
 import sys
 import os
 
-# Get the base URL from environment
-BASE_URL = "https://media-network-1.preview.emergentagent.com"
+# Get the base URL from environment - using localhost for testing
+BASE_URL = "http://localhost:3000"
 API_BASE = f"{BASE_URL}/api"
 
 class AIpmaAPITester:
