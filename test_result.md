@@ -101,3 +101,178 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Test the AIPMA website backend API extensively. Professional website for Alianza Internacional de Periodismo y Medios Audiovisuales with MongoDB integration. Test all backend endpoints comprehensively including API structure, data content validation, POST operations, data structure validation, and error handling."
+
+backend:
+  - task: "API Structure Testing - GET /api/"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - API info endpoint needs testing"
+
+  - task: "GET /api/noticias endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - news articles endpoint needs testing"
+
+  - task: "GET /api/eventos endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - events endpoint needs testing"
+
+  - task: "GET /api/miembros endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - members endpoint needs testing"
+
+  - task: "POST /api/contacto endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - contact form submission needs testing"
+
+  - task: "POST /api/noticias endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - create news article needs testing"
+
+  - task: "POST /api/eventos endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - create event needs testing"
+
+  - task: "POST /api/miembros endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - create member needs testing"
+
+  - task: "Data Structure Validation - UUID usage"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - verify UUID usage instead of MongoDB ObjectID"
+
+  - task: "Spanish Content Validation"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - verify Spanish language content in all data"
+
+  - task: "Error Handling Testing"
+    implemented: true
+    working: "NA"
+    file: "/app/app/api/[[...path]]/route.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Initial testing setup - test invalid endpoints and malformed requests"
+
+frontend:
+  - task: "Frontend Testing"
+    implemented: true
+    working: "NA"
+    file: "/app/app/page.js"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+        -working: "NA"
+        -agent: "testing"
+        -comment: "Frontend testing not required for this task - focus on backend API testing only"
+
+metadata:
+  created_by: "testing_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "API Structure Testing - GET /api/"
+    - "GET /api/noticias endpoint"
+    - "GET /api/eventos endpoint"
+    - "GET /api/miembros endpoint"
+    - "POST /api/contacto endpoint"
+    - "POST /api/noticias endpoint"
+    - "POST /api/eventos endpoint"
+    - "POST /api/miembros endpoint"
+    - "Data Structure Validation - UUID usage"
+    - "Spanish Content Validation"
+    - "Error Handling Testing"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+    -agent: "testing"
+    -message: "Starting comprehensive backend API testing for AIPMA website. Created initial test structure with all backend endpoints identified. Will test GET and POST operations, data validation, Spanish content, UUID usage, and error handling."
