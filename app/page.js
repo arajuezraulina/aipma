@@ -757,7 +757,7 @@ function AIPMAWebsite() {
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <div className="bg-primary text-primary-foreground p-2 rounded-lg">
-                <GlobalIcon className="h-6 w-6" />
+                <Globe className="h-6 w-6" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foreground">AIPMA</h3>
