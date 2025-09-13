@@ -774,8 +774,3 @@ function AIPMAWebsite() {
   )
 }
 
-export default function App() {
-  return <AIPMAWebsite />
-}
-
-function AIPMAWebsite() {
