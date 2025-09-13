@@ -72,7 +72,7 @@ function AIPMAWebsite() {
   }
 
   const navigation = [
-    { id: 'inicio', label: 'Inicio', icon: GlobalIcon },
+    { id: 'inicio', label: 'Inicio', icon: Globe },
     { id: 'nosotros', label: 'Quiénes Somos', icon: UsersIcon },
     { id: 'noticias', label: 'Noticias', icon: NewspaperIcon },
     { id: 'eventos', label: 'Eventos', icon: CalendarIcon },
