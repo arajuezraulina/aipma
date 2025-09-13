@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
-import { CalendarIcon, UsersIcon, NewspaperIcon, GlobalIcon, MailIcon, MenuIcon, XIcon } from 'lucide-react'
+import { CalendarIcon, UsersIcon, NewspaperIcon, Globe, MailIcon, MenuIcon, XIcon } from 'lucide-react'
 
 function AIPMAWebsite() {
   const [activeSection, setActiveSection] = useState('inicio')
