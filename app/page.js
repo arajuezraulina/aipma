@@ -774,4 +774,8 @@ const App = () => {
   )
 }
 
-export default App
+export default function App() {
+  return <AIPMAWebsite />
+}
+
+function AIPMAWebsite() {
