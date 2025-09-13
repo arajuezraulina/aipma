@@ -774,3 +774,5 @@ function AIPMAWebsite() {
   )
 }
 
+export default AIPMAWebsite
+
