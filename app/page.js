@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { CalendarIcon, UsersIcon, NewspaperIcon, GlobalIcon, MailIcon, MenuIcon, XIcon } from 'lucide-react'
 
-const App = () => {
+function AIPMAWebsite() {
   const [activeSection, setActiveSection] = useState('inicio')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [noticias, setNoticias] = useState([])
