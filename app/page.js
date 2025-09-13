@@ -86,7 +86,7 @@ function AIPMAWebsite() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <div className="bg-primary text-primary-foreground p-2 rounded-lg">
-              <GlobalIcon className="h-6 w-6" />
+              <Globe className="h-6 w-6" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground">AIPMA</h1>
