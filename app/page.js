@@ -145,9 +145,9 @@ function AIPMAWebsite() {
   const renderInicio = () => (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-primary/20 via-background to-primary/10">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxnbG9iYWx8ZW58MHx8fHwxNzU3NzkxODQzfDA&ixlib=rb-4.1.0&q=85)'
           }}
@@ -155,17 +155,17 @@ function AIPMAWebsite() {
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             Conectando el Periodismo
-            <span className="block text-primary">y los Medios en el Mundo</span>
+            <span className="block text-primary bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">y los Medios en el Mundo</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             La Alianza Internacional de Periodismo y Medios Audiovisuales representa la pluralidad, 
             ética y credibilidad de la voz global del periodismo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={() => setActiveSection('nosotros')}>
+            <Button size="lg" onClick={() => setActiveSection('nosotros')} className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all">
               Conoce Más Sobre Nosotros
             </Button>
-            <Button size="lg" variant="outline" onClick={() => setActiveSection('miembros')}>
+            <Button size="lg" variant="outline" onClick={() => setActiveSection('miembros')} className="border-primary text-primary hover:bg-primary hover:text-white transition-all">
               Únete a AIPMA
             </Button>
           </div>
