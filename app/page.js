@@ -230,7 +230,7 @@ function AIPMAWebsite() {
       </section>
 
       {/* Recent News Preview */}
-      <section className="bg-muted/50 py-16">
+      <section className="bg-primary/5 py-16 border-t border-primary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Últimas Noticias</h2>
@@ -239,15 +239,15 @@ function AIPMAWebsite() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {noticias.slice(0, 3).map((noticia) => (
-              <Card key={noticia.id} className="hover:shadow-lg transition-shadow">
+              <Card key={noticia.id} className="hover:shadow-lg transition-shadow border-primary/20 hover:border-primary/40">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
-                    <Badge variant="secondary">{noticia.categoria}</Badge>
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">{noticia.categoria}</Badge>
                     <span className="text-sm text-muted-foreground">
                       {new Date(noticia.fecha).toLocaleDateString('es-ES')}
                     </span>
                   </div>
-                  <CardTitle className="text-lg">{noticia.titulo}</CardTitle>
+                  <CardTitle className="text-lg text-primary">{noticia.titulo}</CardTitle>
                   <CardDescription>{noticia.resumen}</CardDescription>
                 </CardHeader>
               </Card>
@@ -255,7 +255,7 @@ function AIPMAWebsite() {
           </div>
           
           <div className="text-center mt-8">
-            <Button onClick={() => setActiveSection('noticias')}>Ver Todas las Noticias</Button>
+            <Button onClick={() => setActiveSection('noticias')} className="bg-primary hover:bg-primary/90 text-white">Ver Todas las Noticias</Button>
           </div>
         </div>
       </section>
